@@ -1,0 +1,143 @@
+.body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-size: 2rem;
+    color: black;
+    font-weight: 500;
+}
+/* ==========NAV-LEFT========== */
+.nav-left{
+    position: fixed;
+    /* border: 2px solid aqua; */
+    width: 28%;
+    height: 99%;
+    padding-bottom: 2rem;
+}
+
+.nav-left ul{
+    /* border: 2px solid red; */
+    height: 88%;
+    width: 100%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.nav-left li{
+    position: relative;
+    width: 100%; 
+    font-size: 2rem;  
+}
+.nav-left a{ 
+    font-size: 1rem;
+    color:#4d4e53;
+    border-top: 1px solid #000;
+ 
+}
+
+/* ==========MAIN========== */
+.main-right{
+    position: relative;
+    padding: 2rem 1.5rem;
+    margin-left: 28%;
+    border-left:3px solid rgba(0, 22, 22, 0.4);
+}
+.main-section article{
+    text-align: justify;
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+}
+.main-section li{
+    padding-bottom: 1rem;
+}
+code{
+    display: block;
+    text-align: left;
+    line-height: 2;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: rgba(255, 38, 0, 0.856);
+  }
+span{
+    color:rgba(255, 38, 0, 0.856);
+    background:#f7f7f7;
+    padding: 2px;
+    margin-right: 5px;
+  }
+
+/* ==========FOOTER========== */
+  #footer{
+    background-color: #2b323f;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+}
+.footer-logo img{
+    margin-top: -4.5rem;
+}
+.social-icons{
+    margin-top: -1rem;
+}
+.social-icons a{
+    margin-right: 10px;
+    color:#8d8c8c;
+}
+.copyright{
+    margin-top: 1rem;
+    color:#fff;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+  @media only screen and (max-width: 769px) {
+   
+   
+    .nav-left {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin-left:2.5rem ;
+    width: 90%;
+    border:2px solid #4d4e53;
+    height: 277px;
+    z-index: 1;
+        
+    }
+   .nav-left ul{
+    height: 180px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+   }
+    .main-right {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 300px;
+        border-left: none;
+     
+    }
+    .main-right header{
+        text-align: center;
+    }
+    code {
+        white-space: pre-line;
+        text-align: left;
+        margin: auto;
+        width: 100%;
+      }
+  }
+  @media only screen and (max-width: 376px){
+    .nav-left {
+      
+        margin-left:1.5rem ;
+       
+        }
+  }
